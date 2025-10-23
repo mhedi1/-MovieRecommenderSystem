@@ -1,0 +1,10 @@
+{
+  "total_ratings": 25000095,
+  "unique_users": 162541,
+  "unique_movies": 59047,
+  "sparsity_percent": 99.73951609474271,
+  "mean_rating": 3.533854451353085,
+  "unique_genres": 19,
+  "unique_tags": 73050,
+  "date_range": "1995-01-09 11:46:49 to 2019-11-21 09:15:03"
+}
