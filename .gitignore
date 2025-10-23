@@ -1,0 +1,100 @@
+# ============================================
+# DATA FILES (Too large for GitHub)
+# ============================================
+# Raw data files are too large (678 MB)
+data/raw/*.csv
+data/raw/*.zip
+data/raw/ratings.csv
+data/raw/movies.csv
+data/raw/tags.csv
+data/raw/links.csv
+data/raw/genome-scores.csv
+data/raw/genome-tags.csv
+
+# Large processed files (too large for GitHub)
+data/processed/train.csv
+data/processed/test.csv
+
+# Keep folder structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ============================================
+# PYTHON
+# ============================================
+# Virtual environment
+venv/
+env/
+ENV/
+.venv
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ============================================
+# JUPYTER NOTEBOOKS
+# ============================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ============================================
+# MODELS (Can be large)
+# ============================================
+# Uncomment if models are too large
+# models/*.pkl
+# models/*.joblib
+# models/*.h5
+!models/.gitkeep
+
+# ============================================
+# REPORTS (Keep visualizations!)
+# ============================================
+# We WANT to commit visualizations
+# So DON'T ignore reports/figures/
+
+# ============================================
+# OPERATING SYSTEM
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+
+# ============================================
+# IDEs
+# ============================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# ============================================
+# TEMPORARY FILES
+# ============================================
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# ============================================
+# ENVIRONMENT VARIABLES
+# ============================================
+.env
+.env.local
