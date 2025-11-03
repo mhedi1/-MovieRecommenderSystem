@@ -1,0 +1,37 @@
+{
+  "notebook": "Notebook_4_Content_Based_Filtering",
+  "models": {
+    "genre_based": {
+      "type": "content_based",
+      "similarity": "cosine",
+      "features": "binary_genres",
+      "n_features": 19,
+      "coverage": 57361
+    },
+    "tag_based": {
+      "type": "content_based",
+      "similarity": "cosine",
+      "features": "tfidf_tags",
+      "n_features": 5000,
+      "coverage": 45247,
+      "tfidf_params": {
+        "max_features": 5000,
+        "min_df": 2,
+        "max_df": 0.8
+      }
+    },
+    "hybrid": {
+      "type": "hybrid_content",
+      "genre_weight": 0.4,
+      "tag_weight": 0.6,
+      "coverage": 43094
+    }
+  },
+  "dataset_stats": {
+    "total_movies": 62423,
+    "train_ratings": 20000076,
+    "test_ratings": 5000019,
+    "train_users": 137883,
+    "test_users": 31059
+  }
+}
