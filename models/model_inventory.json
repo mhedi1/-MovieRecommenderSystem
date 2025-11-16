@@ -1,0 +1,58 @@
+{
+  "created": "2025-11-16 19:53:43",
+  "models": {
+    "user_item_matrix.npz": {
+      "description": "User-item interaction matrix (sparse CSR)",
+      "shape": [
+        137883,
+        34461
+      ],
+      "sparsity": 99.57908631486782
+    },
+    "matrix_mappings.pkl": {
+      "description": "ID to index mappings",
+      "contents": [
+        "user_to_idx",
+        "idx_to_user",
+        "movie_to_idx",
+        "idx_to_movie"
+      ]
+    },
+    "user_similarity_sampled.npy": {
+      "description": "User-user similarity matrix (5K sampled)",
+      "shape": [
+        5000,
+        5000
+      ],
+      "mean_similarity": 0.313344838858316
+    },
+    "item_similarity_sampled.npy": {
+      "description": "Item-item similarity matrix (5K sampled)",
+      "shape": [
+        5000,
+        5000
+      ],
+      "mean_similarity": 0.07593228747285831
+    },
+    "evaluation_results_cf.pkl": {
+      "description": "Complete evaluation results (Python format)"
+    },
+    "evaluation_results_cf.json": {
+      "description": "Evaluation summary (human-readable)"
+    }
+  },
+  "visualizations": [
+    "rating_distribution_cf.png",
+    "01_matrix_density_analysis.png",
+    "03_item_similarity_analysis.png",
+    "04_overlap_analysis.png",
+    "05_diversity_analysis.png",
+    "06_cf_evaluation_results.png"
+  ],
+  "performance_summary": {
+    "best_method": "Item-Based CF",
+    "precision@10": 14.081632653061224,
+    "hit_rate@10": 48.97959183673469,
+    "improvement_over_user_based": "712%"
+  }
+}

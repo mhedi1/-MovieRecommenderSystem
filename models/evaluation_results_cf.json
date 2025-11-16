@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "project": "Movie Recommendation System - Collaborative Filtering",
+    "dataset": "MovieLens 25M",
+    "notebook": "Notebook 5: Collaborative Filtering",
+    "date_completed": "2025-11-16 19:53:42"
+  },
+  "data_statistics": {
+    "training_ratings": 20000076,
+    "test_ratings": 5000019,
+    "n_users_train": 137883,
+    "n_movies_train": 34461,
+    "matrix_shape": [
+      137883,
+      34461
+    ],
+    "matrix_sparsity": 99.57908631486782
+  },
+  "similarity_statistics": {
+    "user_similarity_mean": 0.313344838858316,
+    "item_similarity_mean": 0.07593228747285831,
+    "n_users_sampled": 5000,
+    "n_items_sampled": 5000
+  },
+  "evaluation_setup": {
+    "test_coverage_pct": 12.21323358971236,
+    "cold_start_users": 24658,
+    "cold_start_movies": 24586,
+    "n_eval_users": 100,
+    "ground_truth_avg": 43.51
+  },
+  "user_based_performance": {
+    "Precision@5": 2.6530612244897966,
+    "Precision@10": 1.7346938775510208,
+    "Recall@5": 0.46107175668344,
+    "Recall@10": 0.6749624795587805,
+    "Hit Rate@5": 13.26530612244898,
+    "Hit Rate@10": 16.3265306122449
+  },
+  "item_based_performance": {
+    "Precision@5": 17.551020408163264,
+    "Precision@10": 14.081632653061224,
+    "Recall@5": 2.201670545680421,
+    "Recall@10": 3.3214843242032313,
+    "Hit Rate@5": 39.795918367346935,
+    "Hit Rate@10": 48.97959183673469
+  },
+  "key_findings": {
+    "winner": "Item-Based CF",
+    "precision_improvement": 711.7647058823527,
+    "hit_rate_improvement": 200.0,
+    "recommendation_overlap_pct": 0.0,
+    "diversity_winner": "Item-Based (+38.5%)"
+  }
+}
