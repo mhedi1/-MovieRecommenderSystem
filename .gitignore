@@ -1,5 +1,5 @@
 # ============================================
-# DATA FILES (Too large for GitHub)
+# DATA FILES
 # ============================================
 # Raw data files are too large (678 MB)
 data/raw/*.csv
@@ -11,7 +11,7 @@ data/raw/links.csv
 data/raw/genome-scores.csv
 data/raw/genome-tags.csv
 
-# Large processed files (too large for GitHub)
+# Large processed files
 data/processed/train.csv
 data/processed/test.csv
 
