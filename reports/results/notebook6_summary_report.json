@@ -1,0 +1,50 @@
+{
+  "notebook": "Notebook 6: Matrix Factorization (SVD)",
+  "date": "2025-11-17 22:08:35",
+  "dataset": {
+    "users": 137883,
+    "movies": 34461,
+    "sparsity": 99.57908631486782,
+    "ratings": 20000076
+  },
+  "models_trained": {
+    "SVD-50": {
+      "explained_variance": 17.9776824723494,
+      "training_time_seconds": 14.749830961227417,
+      "precision@10": 15.204081632653061,
+      "hit_rate@10": 56.12244897959183
+    },
+    "SVD-100": {
+      "explained_variance": 24.310513156266705,
+      "training_time_seconds": 55.821367502212524,
+      "precision@10": 15.510204081632653,
+      "hit_rate@10": 58.16326530612245
+    },
+    "SVD-200": {
+      "explained_variance": 33.29733415549681,
+      "training_time_seconds": 115.9206748008728,
+      "precision@10": 14.081632653061224,
+      "hit_rate@10": 58.16326530612245
+    }
+  },
+  "best_model": {
+    "name": "SVD-100",
+    "k": 100,
+    "explained_variance": 24.310513156266705,
+    "precision@10": 15.510204081632653,
+    "recall@10": 3.953921182510759,
+    "hit_rate@10": 58.16326530612245
+  },
+  "evaluation": {
+    "test_users": 100,
+    "metrics": [
+      "Precision@10",
+      "Recall@10",
+      "Hit Rate@10"
+    ]
+  },
+  "files_created": {
+    "models": 4,
+    "visualizations": 7
+  }
+}

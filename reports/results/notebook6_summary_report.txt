@@ -1,0 +1,63 @@
+================================================================================
+NOTEBOOK 6: MATRIX FACTORIZATION (SVD) - SUMMARY REPORT
+================================================================================
+
+Generated: 2025-11-17 22:08:35
+
+DATASET STATISTICS:
+--------------------------------------------------------------------------------
+  Users: 137,883
+  Movies: 34,461
+  Ratings: 20,000,076
+  Sparsity: 99.58%
+
+MODELS TRAINED:
+--------------------------------------------------------------------------------
+
+  SVD-50:
+    Explained Variance: 17.98%
+    Training Time: 14.7s (0.25m)
+    Precision@10: 15.20%
+    Recall@10: 3.95%
+    Hit Rate@10: 56.12%
+
+  SVD-100:
+    Explained Variance: 24.31%
+    Training Time: 55.8s (0.93m)
+    Precision@10: 15.51%
+    Recall@10: 3.95%
+    Hit Rate@10: 58.16%
+
+  SVD-200:
+    Explained Variance: 33.30%
+    Training Time: 115.9s (1.93m)
+    Precision@10: 14.08%
+    Recall@10: 2.91%
+    Hit Rate@10: 58.16%
+
+================================================================================
+BEST MODEL: SVD-100
+================================================================================
+  Latent Factors: 100
+  Explained Variance: 24.31%
+  Precision@10: 15.51%
+  Recall@10: 3.95%
+  Hit Rate@10: 58.16%
+
+EVALUATION SETUP:
+--------------------------------------------------------------------------------
+  Test Users: 100
+  Metrics: Precision@K, Recall@K, Hit Rate@K
+  K values: 5, 10
+
+FILES CREATED:
+--------------------------------------------------------------------------------
+  Model files: 4
+  Visualizations: 7
+
+COMPARISON WITH OTHER METHODS:
+--------------------------------------------------------------------------------
+  User-Based CF: 1.73% precision
+  Item-Based CF: 14.08% precision
+  Best SVD: 15.51% precision
+
